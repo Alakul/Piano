@@ -8,126 +8,250 @@
 	</head>
 	
 	<body>
-	<div id="piano">
-		<div id="box"></div>
+		<div id="piano">
+			<div id="box"></div>
 
-			<div id="side" style="margin-left: 20px;"></div>
-			<div id="board">
-				<div id="keyboard">
-					<div class="keys">
-						<div id="A0" class="whiteKey" onclick="play(this);"></div>
-						<div id="Bb0" class="blackKey" onclick="play(this);" style="left: 14px;"></div>
-						<div id="B0" class="whiteKey" onclick="play(this);"></div>
+				<div id="side" style="margin-left: 20px;"></div>
+				<div id="board">
+					<div id="keyboard">
+						<div class="keys hide">
+							<div id="A0" class="whiteKey" onclick="play(this);"></div>
+							<div id="Bb0" class="blackKey" onclick="play(this);" style="left: 14px;"></div>
+							<div id="B0" class="whiteKey" onclick="play(this);"></div>
+						</div>
+							
+						<div class="keys hide">
+							<div id="C1" class="whiteKey" onclick="play(this);"></div>
+							<div id="Db1" class="blackKey Db" onclick="play(this);"></div>
+							<div id="D1" class="whiteKey" onclick="play(this);"></div>
+							<div id="Eb1" class="blackKey Eb" onclick="play(this);"></div>
+							<div id="E1" class="whiteKey" onclick="play(this);"></div>
+							<div id="F1" class="whiteKey" onclick="play(this);"></div>
+							<div id="Gb1" class="blackKey Gb" onclick="play(this);"></div>
+							<div id="G1" class="whiteKey" onclick="play(this);"></div>
+							<div id="Ab1" class="blackKey Ab" onclick="play(this);"></div>
+							<div id="A1" class="whiteKey" onclick="play(this);"></div>
+							<div id="Bb1" class="blackKey Bb" onclick="play(this);"></div>
+							<div id="B1" class="whiteKey" onclick="play(this);"></div>
+						</div>
+						<div class="keys">
+							<div id="C2" class="whiteKey" onclick="play(this);"></div>
+							<div id="Db2" class="blackKey Db" onclick="play(this);"></div>
+							<div id="D2" class="whiteKey" onclick="play(this);"></div>
+							<div id="Eb2" class="blackKey Eb" onclick="play(this);"></div>
+							<div id="E2" class="whiteKey" onclick="play(this);"></div>
+							<div id="F2" class="whiteKey" onclick="play(this);"></div>
+							<div id="Gb2" class="blackKey Gb" onclick="play(this);"></div>
+							<div id="G2" class="whiteKey" onclick="play(this);"></div>
+							<div id="Ab2" class="blackKey Ab" onclick="play(this);"></div>
+							<div id="A2" class="whiteKey" onclick="play(this);"></div>
+							<div id="Bb2" class="blackKey Bb" onclick="play(this);"></div>
+							<div id="B2" class="whiteKey" onclick="play(this);"></div>
+						</div>
+						<div class="keys">
+							<div id="C3" class="whiteKey" onclick="play(this);"></div>
+							<div id="Db3" class="blackKey Db" onclick="play(this);"></div>
+							<div id="D3" class="whiteKey" onclick="play(this);"></div>
+							<div id="Eb3" class="blackKey Eb" onclick="play(this);"></div>
+							<div id="E3" class="whiteKey" onclick="play(this);"></div>
+							<div id="F3" class="whiteKey" onclick="play(this);"></div>
+							<div id="Gb3" class="blackKey Gb" onclick="play(this);"></div>
+							<div id="G3" class="whiteKey" onclick="play(this);"></div>
+							<div id="Ab3" class="blackKey Ab" onclick="play(this);"></div>
+							<div id="A3" class="whiteKey" onclick="play(this);"></div>
+							<div id="Bb3" class="blackKey Bb" onclick="play(this);"></div>
+							<div id="B3" class="whiteKey" onclick="play(this);"></div>
+						</div>
+						<div class="keys">
+							<div id="C4" class="whiteKey" onclick="play(this);"></div>
+							<div id="Db4" class="blackKey Db" onclick="play(this);"></div>
+							<div id="D4" class="whiteKey" onclick="play(this);"></div>
+							<div id="Eb4" class="blackKey Eb" onclick="play(this);"></div>
+							<div id="E4" class="whiteKey" onclick="play(this);"></div>
+							<div id="F4" class="whiteKey" onclick="play(this);"></div>
+							<div id="Gb4" class="blackKey Gb" onclick="play(this);"></div>
+							<div id="G4" class="whiteKey" onclick="play(this);"></div>
+							<div id="Ab4" class="blackKey Ab" onclick="play(this);"></div>
+							<div id="A4" class="whiteKey" onclick="play(this);"></div>
+							<div id="Bb4" class="blackKey Bb" onclick="play(this);"></div>
+							<div id="B4" class="whiteKey" onclick="play(this);"></div>
+						</div>
+						<div class="keys">
+							<div id="C5" class="whiteKey" onclick="play(this);"></div>
+							<div id="Db5" class="blackKey Db" onclick="play(this);"></div>
+							<div id="D5" class="whiteKey" onclick="play(this);"></div>
+							<div id="Eb5" class="blackKey Eb" onclick="play(this);"></div>
+							<div id="E5" class="whiteKey" onclick="play(this);"></div>
+							<div id="F5" class="whiteKey" onclick="play(this);"></div>
+							<div id="Gb5" class="blackKey Gb" onclick="play(this);"></div>
+							<div id="G5" class="whiteKey" onclick="play(this);"></div>
+							<div id="Ab5" class="blackKey Ab" onclick="play(this);"></div>
+							<div id="A5" class="whiteKey" onclick="play(this);"></div>
+							<div id="Bb5" class="blackKey Bb" onclick="play(this);"></div>
+							<div id="B5" class="whiteKey" onclick="play(this);"></div>
+						</div>
+						<div class="keys">	
+							<div id="C6" class="whiteKey" onclick="play(this);"></div>
+							<div id="Db6" class="blackKey Db" onclick="play(this);"></div>
+							<div id="D6" class="whiteKey" onclick="play(this);"></div>
+							<div id="Eb6" class="blackKey Eb" onclick="play(this);"></div>
+							<div id="E6" class="whiteKey" onclick="play(this);"></div>
+							<div id="F6" class="whiteKey" onclick="play(this);"></div>
+							<div id="Gb6" class="blackKey Gb" onclick="play(this);"></div>
+							<div id="G6" class="whiteKey" onclick="play(this);"></div>
+							<div id="Ab6" class="blackKey Ab" onclick="play(this);"></div>
+							<div id="A6" class="whiteKey" onclick="play(this);"></div>
+							<div id="Bb6" class="blackKey Bb" onclick="play(this);"></div>
+							<div id="B6" class="whiteKey" onclick="play(this);"></div>
+						</div>
+						<div class="keys hide">	
+							<div id="C7" class="whiteKey" onclick="play(this);"></div>
+							<div id="Db7" class="blackKey Db" onclick="play(this);"></div>
+							<div id="D7" class="whiteKey" onclick="play(this);"></div>
+							<div id="Eb7" class="blackKey Eb" onclick="play(this);"></div>
+							<div id="E7" class="whiteKey" onclick="play(this);"></div>
+							<div id="F7" class="whiteKey" onclick="play(this);"></div>
+							<div id="Gb7" class="blackKey Gb" onclick="play(this);"></div>
+							<div id="G7" class="whiteKey" onclick="play(this);"></div>
+							<div id="Ab7" class="blackKey Ab" onclick="play(this);"></div>
+							<div id="A7" class="whiteKey" onclick="play(this);"></div>
+							<div id="Bb7" class="blackKey Bb" onclick="play(this);"></div>
+							<div id="B7" class="whiteKey" onclick="play(this);"></div>
+						</div>
+						<div class="keys hide">	
+							<div id="C8" class="whiteKey" onclick="play(this);" style="border: none;"></div>
+						</div>
 					</div>
-						
-					<div class="keys">
-						<div id="C1" class="whiteKey" onclick="play(this);"></div>
-						<div id="Db1" class="blackKey Db" onclick="play(this);"></div>
-						<div id="D1" class="whiteKey" onclick="play(this);"></div>
-						<div id="Eb1" class="blackKey Eb" onclick="play(this);"></div>
-						<div id="E1" class="whiteKey" onclick="play(this);"></div>
-						<div id="F1" class="whiteKey" onclick="play(this);"></div>
-						<div id="Gb1" class="blackKey Gb" onclick="play(this);"></div>
-						<div id="G1" class="whiteKey" onclick="play(this);"></div>
-						<div id="Ab1" class="blackKey Ab" onclick="play(this);"></div>
-						<div id="A1" class="whiteKey" onclick="play(this);"></div>
-						<div id="Bb1" class="blackKey Bb" onclick="play(this);"></div>
-						<div id="B1" class="whiteKey" onclick="play(this);"></div>
-					</div>
-					<div class="keys">
-						<div id="C2" class="whiteKey" onclick="play(this);"></div>
-						<div id="Db2" class="blackKey Db" onclick="play(this);"></div>
-						<div id="D2" class="whiteKey" onclick="play(this);"></div>
-						<div id="Eb2" class="blackKey Eb" onclick="play(this);"></div>
-						<div id="E2" class="whiteKey" onclick="play(this);"></div>
-						<div id="F2" class="whiteKey" onclick="play(this);"></div>
-						<div id="Gb2" class="blackKey Gb" onclick="play(this);"></div>
-						<div id="G2" class="whiteKey" onclick="play(this);"></div>
-						<div id="Ab2" class="blackKey Ab" onclick="play(this);"></div>
-						<div id="A2" class="whiteKey" onclick="play(this);"></div>
-						<div id="Bb2" class="blackKey Bb" onclick="play(this);"></div>
-						<div id="B2" class="whiteKey" onclick="play(this);"></div>
-					</div>
-					<div class="keys">
-						<div id="C3" class="whiteKey" onclick="play(this);"></div>
-						<div id="Db3" class="blackKey Db" onclick="play(this);"></div>
-						<div id="D3" class="whiteKey" onclick="play(this);"></div>
-						<div id="Eb3" class="blackKey Eb" onclick="play(this);"></div>
-						<div id="E3" class="whiteKey" onclick="play(this);"></div>
-						<div id="F3" class="whiteKey" onclick="play(this);"></div>
-						<div id="Gb3" class="blackKey Gb" onclick="play(this);"></div>
-						<div id="G3" class="whiteKey" onclick="play(this);"></div>
-						<div id="Ab3" class="blackKey Ab" onclick="play(this);"></div>
-						<div id="A3" class="whiteKey" onclick="play(this);"></div>
-						<div id="Bb3" class="blackKey Bb" onclick="play(this);"></div>
-						<div id="B3" class="whiteKey" onclick="play(this);"></div>
-					</div>
-					<div class="keys">
-						<div id="C4" class="whiteKey" onclick="play(this);"></div>
-						<div id="Db4" class="blackKey Db" onclick="play(this);"></div>
-						<div id="D4" class="whiteKey" onclick="play(this);"></div>
-						<div id="Eb4" class="blackKey Eb" onclick="play(this);"></div>
-						<div id="E4" class="whiteKey" onclick="play(this);"></div>
-						<div id="F4" class="whiteKey" onclick="play(this);"></div>
-						<div id="Gb4" class="blackKey Gb" onclick="play(this);"></div>
-						<div id="G4" class="whiteKey" onclick="play(this);"></div>
-						<div id="Ab4" class="blackKey Ab" onclick="play(this);"></div>
-						<div id="A4" class="whiteKey" onclick="play(this);"></div>
-						<div id="Bb4" class="blackKey Bb" onclick="play(this);"></div>
-						<div id="B4" class="whiteKey" onclick="play(this);"></div>
-					</div>
-					<div class="keys">
-						<div id="C5" class="whiteKey" onclick="play(this);"></div>
-						<div id="Db5" class="blackKey Db" onclick="play(this);"></div>
-						<div id="D5" class="whiteKey" onclick="play(this);"></div>
-						<div id="Eb5" class="blackKey Eb" onclick="play(this);"></div>
-						<div id="E5" class="whiteKey" onclick="play(this);"></div>
-						<div id="F5" class="whiteKey" onclick="play(this);"></div>
-						<div id="Gb5" class="blackKey Gb" onclick="play(this);"></div>
-						<div id="G5" class="whiteKey" onclick="play(this);"></div>
-						<div id="Ab5" class="blackKey Ab" onclick="play(this);"></div>
-						<div id="A5" class="whiteKey" onclick="play(this);"></div>
-						<div id="Bb5" class="blackKey Bb" onclick="play(this);"></div>
-						<div id="B5" class="whiteKey" onclick="play(this);"></div>
-					</div>
-					<div class="keys">	
-						<div id="C6" class="whiteKey" onclick="play(this);"></div>
-						<div id="Db6" class="blackKey Db" onclick="play(this);"></div>
-						<div id="D6" class="whiteKey" onclick="play(this);"></div>
-						<div id="Eb6" class="blackKey Eb" onclick="play(this);"></div>
-						<div id="E6" class="whiteKey" onclick="play(this);"></div>
-						<div id="F6" class="whiteKey" onclick="play(this);"></div>
-						<div id="Gb6" class="blackKey Gb" onclick="play(this);"></div>
-						<div id="G6" class="whiteKey" onclick="play(this);"></div>
-						<div id="Ab6" class="blackKey Ab" onclick="play(this);"></div>
-						<div id="A6" class="whiteKey" onclick="play(this);"></div>
-						<div id="Bb6" class="blackKey Bb" onclick="play(this);"></div>
-						<div id="B6" class="whiteKey" onclick="play(this);"></div>
-					</div>
-					<div class="keys">	
-						<div id="C7" class="whiteKey" onclick="play(this);"></div>
-						<div id="Db7" class="blackKey Db" onclick="play(this);"></div>
-						<div id="D7" class="whiteKey" onclick="play(this);"></div>
-						<div id="Eb7" class="blackKey Eb" onclick="play(this);"></div>
-						<div id="E7" class="whiteKey" onclick="play(this);"></div>
-						<div id="F7" class="whiteKey" onclick="play(this);"></div>
-						<div id="Gb7" class="blackKey Gb" onclick="play(this);"></div>
-						<div id="G7" class="whiteKey" onclick="play(this);"></div>
-						<div id="Ab7" class="blackKey Ab" onclick="play(this);"></div>
-						<div id="A7" class="whiteKey" onclick="play(this);"></div>
-						<div id="Bb7" class="blackKey Bb" onclick="play(this);"></div>
-						<div id="B7" class="whiteKey" onclick="play(this);"></div>
-					</div>
-						<div id="C8" class="whiteKey" onclick="play(this);" style="border: none;"></div>
+				</div>
+				<div id="side" style="margin-right: 20px;"></div>
+			</div>
+		</div>
+		
+		<div class="scales">
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Gmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="Gmajor" class="button" onclick="getScale(this);">G-dur</button>
+					<button id="Eminor" class="button" onclick="getScale(this);">E-moll</button>
 				</div>
 			</div>
-			<div id="side" style="margin-right: 20px;"></div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Dmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="Dmajor" class="button" onclick="getScale(this);">D-dur</button>
+					<button id="Bminor" class="button" onclick="getScale(this);">H-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Amajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="Amajor" class="button" onclick="getScale(this);">A-dur</button>
+					<button id="FSminor" class="button" onclick="getScale(this);">Fis-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Emajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="Emajor" class="button" onclick="getScale(this);">E-dur</button>
+					<button id="CSminor" class="button" onclick="getScale(this);">Cis-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Bmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="Bmajor" class="button" onclick="getScale(this);">H-dur</button>
+					<button id="GSminor" class="button" onclick="getScale(this);">Gis-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/FSmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="FSmajor" class="button" onclick="getScale(this);">Fis-dur</button>
+					<button id="DSminor" class="button" onclick="getScale(this);">Dis-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/CSmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="CSmajor" class="button" onclick="getScale(this);">Cis-dur</button>
+					<button id="ASminor" class="button" onclick="getScale(this);">Ais-moll</button>
+				</div>
+			</div>
 		</div>
-	</div>
-	
-	
-		</br>
-		<button onclick="playMelody();">Graj</button>
-	
+		
+		<div class="scales">
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Cmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="Cmajor" class="button" onclick="getScale(this);">C-dur</button>
+					<button id="Aminor" class="button" onclick="getScale(this);">A-moll</button>
+				</div>
+			</div>
+		</div>	
+			
+		<div class="scales">
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Fmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="Fmajor" class="button" onclick="getScale(this);">F-dur</button>
+					<button id="Dminor" class="button" onclick="getScale(this);">D-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Bbmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="BBmajor" class="button" onclick="getScale(this);">B-dur</button>
+					<button id="Gminor" class="button" onclick="getScale(this);">G-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Ebmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="EBmajor" class="button" onclick="getScale(this);">Es-dur</button>
+					<button id="Cminor" class="button" onclick="getScale(this);">C-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Abmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="ABmajor" class="button" onclick="getScale(this);">As-dur</button>
+					<button id="Fminor" class="button" onclick="getScale(this);">F-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Dbmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="DBmajor" class="button" onclick="getScale(this);">Des-dur</button>
+					<button id="BBminor" class="button" onclick="getScale(this);">B-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Gbmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="GBmajor" class="button" onclick="getScale(this);">Ges-dur</button>
+					<button id="EBminor" class="button" onclick="getScale(this);">Es-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Cbmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="CBmajor" class="button" onclick="getScale(this);">Ces-dur</button>
+					<button id="ABminor" class="button" onclick="getScale(this);">As-moll</button>
+				</div>
+			</div>
+		</div>
+
 	</body>
 </html>

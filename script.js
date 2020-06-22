@@ -95,6 +95,8 @@ var B7 = new Audio('Keys/B7.wav');
 
 var C8 = new Audio('Keys/C8.wav');
 
+var isOn=false;
+
 function play(obj){
 	var id=obj.id;
 	checkNote(id);
@@ -102,7 +104,6 @@ function play(obj){
 
 function checkNote(id){
 	if (id!=""){
-		//document.getElementById(id).classList.add("red");
 		if (document.getElementById(id).classList.contains('blackKey')){
 			document.getElementById(id).style.backgroundImage = "url('Images/BlackRed.png')"; 
 		}
@@ -211,7 +212,6 @@ function checkNote(id){
 }
 
 function playSound(note, id){
-
 	if (!note) return;
 	note.currentTime = 0;
 
@@ -230,23 +230,120 @@ function keys(id){
 	}
 }
 
+//Major
+var Cmajor=["C4","D4","E4","F4","G4","A4","B4","C5"];
+
+var Gmajor=["G4","A4","B4","C5","D5","E5","Gb5","G5"];
+var Dmajor=["D4","E4","Gb4","G4","A4","B4","Db5","D5"];
+var Amajor=["A4","B4","Db5","D5","E5","Gb5","Ab5","A5"];
+var Emajor=["E4","Gb4","Ab4","A4","B4","Db5","Eb5","E5"];
+var Bmajor=["B3","Db4","Eb4","E4","Gb4","Ab4","Bb4","B4"];
+var FSmajor=["Gb4","Ab4","Bb4","B4","Db5","Eb5","F5","Gb5"];
+var CSmajor=["Db4","Eb4","F4","Gb4","Ab4","Bb4","C5","Db5"];
+
+var Fmajor=["F4","G4","A4","Bb4","C5","D5","E5","F5"];
+var BBmajor=["Bb3","C4","D4","Eb4","F4","G4","A4","Bb4"];
+var EBmajor=["Eb4","F4","G4","Ab4","Bb4","C5","D5","Eb5"];
+var ABmajor=["Ab4","Bb4","C5","Db5","Eb5","F5","G5","Ab5"];
+var DBmajor=["Db4","Eb4","F4","Gb4","Ab4","Bb4","C5","Db5"];
+var GBmajor=["Gb4","Ab4","Bb4","B4","Db5","Eb5","F5","Gb5"];
+var CBmajor=["B3","Db4","Eb4","E4","Gb4","Ab4","Bb4","B4"];
+//
+
+
+//Minor
+var Aminor=["A3","B3","C4","D4","E4","F4","G4","A4"];
+
+var Eminor=["E4","Gb4","G4","A4","B4","C5","D5","E5"];
+var Bminor=["B3","Db4","D4","E4","Gb4","G4","A4","B4"];
+var FSminor=["Gb4","Ab4","A4","B4","Db5","D5","E5","Gb5"];
+var CSminor=["Db4","Eb4","E4","Gb4","Ab4","A4","B4","Db5"];
+var GSminor=["Ab3","Bb3","B3","Db4","Eb4","E4","Gb4","Ab4"];
+var DSminor=["Eb4","F4","Gb4","Ab4","A4","B4","Db5","Eb5"];
+var ASminor=["Bb3","C4","Db4","Eb4","F4","Gb4","Ab4","Bb4"];
+
+var Dminor=["D4","E4","F4","G4","A4","Bb4","C5","D5"];
+var Gminor=["G3","A3","Bb3","C4","D4","Eb4","F4","G4"];
+var Cminor=["C4","D4","Eb4","F4","G4","Ab4","Bb4","C5"];
+var Fminor=["F4","G4","Ab4","Bb4","C5","Db5","Eb5","F5"];
+var BBminor=["Bb3","C4","Db4","Eb4","F4","Gb4","Ab4","Bb4"];
+var EBminor=["Eb4","F4","Gb4","Ab4","Bb4","B4","Db5","Eb5"];
+var ABminor=["Ab4","Bb4","B4","Db5","Eb5","E5","Gb5","Ab5"];
+//
+
+
+function getScale(obj){
+	var id=obj.id;
+
+	if (isOn==false){
+		isOn=true;
+		if (id=="Cmajor"){ playScale(Cmajor); }
+		else if (id=="Gmajor"){ playScale(Gmajor); }
+		else if (id=="Dmajor"){ playScale(Dmajor); }
+		else if (id=="Amajor"){ playScale(Amajor); }
+		else if (id=="Emajor"){ playScale(Emajor); }
+		else if (id=="Bmajor"){ playScale(Bmajor); }
+		else if (id=="FSmajor"){ playScale(FSmajor); }
+		else if (id=="CSmajor"){ playScale(CSmajor); }
+		
+		else if (id=="Fmajor"){ playScale(Fmajor); }
+		else if (id=="BBmajor"){ playScale(BBmajor); }
+		else if (id=="EBmajor"){ playScale(EBmajor); }
+		else if (id=="ABmajor"){ playScale(ABmajor); }
+		else if (id=="DBmajor"){ playScale(DBmajor); }
+		else if (id=="GBmajor"){ playScale(GBmajor); }
+		else if (id=="CBmajor"){ playScale(CBmajor); }
+		
+		else if (id=="Aminor"){ playScale(Aminor); }
+		else if (id=="Eminor"){ playScale(Eminor); }
+		else if (id=="Bminor"){ playScale(Bminor); }
+		else if (id=="FSminor"){ playScale(FSminor); }
+		else if (id=="CSminor"){ playScale(CSminor); }
+		else if (id=="GSminor"){ playScale(GSminor); }
+		else if (id=="DSminor"){ playScale(DSminor); }
+		else if (id=="ASminor"){ playScale(ASminor); }
+		
+		else if (id=="Dminor"){ playScale(Dminor); }
+		else if (id=="Gminor"){ playScale(Gminor); }
+		else if (id=="Cminor"){ playScale(Cminor); }
+		else if (id=="Fminor"){ playScale(Fminor); }
+		else if (id=="BBminor"){ playScale(BBminor); }
+		else if (id=="EBminor"){ playScale(EBminor); }
+		else if (id=="ABminor"){ playScale(ABminor); }
+	}
+}
+
+function playScale(scale){
+	for (let i=0; i<scale.length; i++) { 
+		task(i);
+	}
+	
+	function task(i) { 
+	  setTimeout(function() { 
+		checkNote(scale[i]);
+		if (i==7){
+			isOn=false;
+		}
+	  }, 500 * i);
+	}
+}
+
+
+
 var mel=["A4","A4", "Bb4","C5", "C5", "Bb4", "A4", "G4", "F4", "F4", "G4", "A4","A4","G4"];
 
 var elise= ["E5", "Eb5", "E5", "Eb5", "E5", "B4", "D5", "C5", "A4",
 			"",     "",    "C4",   "E4", "A4", "B4", "", " ", "E4",
 			"Ab4",     "B4",    "C5",   "", "", "E4", "E5", "Eb5", "E5"];
 var elis2= ["",   "",     "",   "",    "",   "",   "",   "",  "A2", "E3","A3","","","","E2","E3"];
-
-
 function playMelody(){
-	for (let i=0; i<elise.length; i++) { 
+	for (let i=0; i<cdur.length; i++) { 
 		task(i); 
-	} 
+	}
 	function task(i) { 
 	  setTimeout(function() { 
-		checkNote(elise[i]);
-		checkNote(elis2[i]);
-	  }, 250 * i); 
+		checkNote(cdur[i]);
+	  }, 500 * i); 
 	} 
 }
 
