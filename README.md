@@ -11,5 +11,5 @@ Project is created with:
 
 ## Screenshot
 <p align="center">
-    <img src="./Screenshots/piano.png" width="400" alt="Piano">
+    <img src="./Screenshots/piano.png" alt="Piano">
 </p>
