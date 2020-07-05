@@ -36,7 +36,7 @@
 }
 
 .scaleImg {
-	width: 80px;
+	width: 60px;
 	display: inline-block;
 	-webkit-user-select: none;
     -khtml-user-select: none;
@@ -52,13 +52,19 @@
 	padding: 8px;
 	margin: 10px;
 	height: 60px;
-	width: 160px;
+	width: 130px;
 	border: 1px solid black;
 	border-radius: 4px;
+	box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.3);
+}
+
+
+.scalesSmall {
+	display: none;
+	margin: 0 auto
 }
 
 .scales {
-	padding: 10px;
 	display: table;
 	margin: 0 auto;
 }
@@ -71,6 +77,7 @@
 	margin-left: 10px;
 	flex-wrap: wrap;
 	gap: 6px;
+	column-gap: 6px;
 }
 
 .button {
@@ -79,8 +86,9 @@
 	color: white;
 	text-decoration: none;
 	padding: 4px;
-	width: 64px;
+	width: 56px;
 	border-radius: 4px;
+	font-size: 13px;
 }
 .button:hover {
 	background-color: #686868;
@@ -142,5 +150,84 @@
 @media only screen and (max-width: 1400px) {
   .hide {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #side {
+	display: none;
+  }
+  #box {
+	display: none;
+  }
+  #board {
+	padding: 20px 30px 4px 30px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  #keyboard {
+	height: 100px;  
+  }
+  #side {
+	display: none;
+  }
+  #box {
+	display: none;
+  }
+  #board {
+	padding: 10px 16px 0px 16px;
+  }
+  
+  .whiteKey {
+	width: 16px;
+  }
+  .blackKey {
+	height: 68px;
+	width: 10px;
+  }
+  .Db {
+	left: 10px;
+  }
+  .Eb {
+	left: 28px;
+  }
+  .Gb {
+	left: 61px;
+  }
+  .Ab {
+	left: 78px;
+  }
+  .Bb {
+	left: 96px;
+  }
+  
+  .scaleImg {
+	width: 50px;
+  }
+  .button {
+	padding: 2px;
+	width: 46px;
+	border-radius: 2px;
+	font-size: 11px;
+  }
+  .scaleBox {
+	padding: 6px;
+	margin: 6px;
+	height: 50px;
+	width: 108px;
+	border-radius: 2px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .hide2 {
+    display: none;
+  }
+  .scales {
+    display: none;
+  }
+  .scalesSmall {
+    display: table;
   }
 }

@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="style.css"/>
 		<script src="jquery.min.js"></script>
         <script src="script.js"></script>
-        <title>Pianinko</title>
+        <title>Pianino</title>
 	</head>
 	
 	<body>
@@ -34,7 +34,7 @@
 							<div id="Bb1" class="blackKey Bb" onclick="play(this);"></div>
 							<div id="B1" class="whiteKey" onclick="play(this);"></div>
 						</div>
-						<div class="keys">
+						<div class="keys hide2">
 							<div id="C2" class="whiteKey" onclick="play(this);"></div>
 							<div id="Db2" class="blackKey Db" onclick="play(this);"></div>
 							<div id="D2" class="whiteKey" onclick="play(this);"></div>
@@ -90,7 +90,7 @@
 							<div id="Bb5" class="blackKey Bb" onclick="play(this);"></div>
 							<div id="B5" class="whiteKey" onclick="play(this);"></div>
 						</div>
-						<div class="keys">	
+						<div class="keys hide2">	
 							<div id="C6" class="whiteKey" onclick="play(this);"></div>
 							<div id="Db6" class="blackKey Db" onclick="play(this);"></div>
 							<div id="D6" class="whiteKey" onclick="play(this);"></div>
@@ -129,6 +129,14 @@
 		
 		<div class="scales">
 			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Cmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="Cmajor" class="button" onclick="getScale(this);">C-dur</button>
+					<button id="Aminor" class="button" onclick="getScale(this);">A-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
 				<img class="scaleImg" src="Images/Scales/Gmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
 				<div class="buttonsBox">
 					<button id="Gmajor" class="button" onclick="getScale(this);">G-dur</button>
@@ -151,7 +159,9 @@
 					<button id="FSminor" class="button" onclick="getScale(this);">Fis-moll</button>
 				</div>
 			</div>
-			
+		</div>
+		
+		<div class="scales">
 			<div class="scaleBox">
 				<img class="scaleImg" src="Images/Scales/Emajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
 				<div class="buttonsBox">
@@ -184,17 +194,7 @@
 				</div>
 			</div>
 		</div>
-		
-		<div class="scales">
-			<div class="scaleBox">
-				<img class="scaleImg" src="Images/Scales/Cmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
-				<div class="buttonsBox">
-					<button id="Cmajor" class="button" onclick="getScale(this);">C-dur</button>
-					<button id="Aminor" class="button" onclick="getScale(this);">A-moll</button>
-				</div>
-			</div>
-		</div>	
-			
+	
 		<div class="scales">
 			<div class="scaleBox">
 				<img class="scaleImg" src="Images/Scales/Fmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
@@ -227,7 +227,9 @@
 					<button id="Fminor" class="button" onclick="getScale(this);">F-moll</button>
 				</div>
 			</div>
-			
+		</div>
+		
+		<div class="scales">
 			<div class="scaleBox">
 				<img class="scaleImg" src="Images/Scales/Dbmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
 				<div class="buttonsBox">
@@ -252,6 +254,140 @@
 				</div>
 			</div>
 		</div>
-
+		
+		
+		
+		<div class="scalesSmall">
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Cmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="Cmajor" class="button" onclick="getScale(this);">C-dur</button>
+					<button id="Aminor" class="button" onclick="getScale(this);">A-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Gmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="Gmajor" class="button" onclick="getScale(this);">G-dur</button>
+					<button id="Eminor" class="button" onclick="getScale(this);">E-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Dmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="Dmajor" class="button" onclick="getScale(this);">D-dur</button>
+					<button id="Bminor" class="button" onclick="getScale(this);">H-moll</button>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="scalesSmall">
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Amajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="Amajor" class="button" onclick="getScale(this);">A-dur</button>
+					<button id="FSminor" class="button" onclick="getScale(this);">Fis-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Emajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="Emajor" class="button" onclick="getScale(this);">E-dur</button>
+					<button id="CSminor" class="button" onclick="getScale(this);">Cis-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Bmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="Bmajor" class="button" onclick="getScale(this);">H-dur</button>
+					<button id="GSminor" class="button" onclick="getScale(this);">Gis-moll</button>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="scalesSmall">
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/FSmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="FSmajor" class="button" onclick="getScale(this);">Fis-dur</button>
+					<button id="DSminor" class="button" onclick="getScale(this);">Dis-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/CSmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="CSmajor" class="button" onclick="getScale(this);">Cis-dur</button>
+					<button id="ASminor" class="button" onclick="getScale(this);">Ais-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Fmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="Fmajor" class="button" onclick="getScale(this);">F-dur</button>
+					<button id="Dminor" class="button" onclick="getScale(this);">D-moll</button>
+				</div>
+			</div>
+		</div>	
+	
+		<div class="scalesSmall">
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Bbmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="BBmajor" class="button" onclick="getScale(this);">B-dur</button>
+					<button id="Gminor" class="button" onclick="getScale(this);">G-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Ebmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="EBmajor" class="button" onclick="getScale(this);">Es-dur</button>
+					<button id="Cminor" class="button" onclick="getScale(this);">C-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Abmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="ABmajor" class="button" onclick="getScale(this);">As-dur</button>
+					<button id="Fminor" class="button" onclick="getScale(this);">F-moll</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="scalesSmall">
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Dbmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="DBmajor" class="button" onclick="getScale(this);">Des-dur</button>
+					<button id="BBminor" class="button" onclick="getScale(this);">B-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Gbmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="GBmajor" class="button" onclick="getScale(this);">Ges-dur</button>
+					<button id="EBminor" class="button" onclick="getScale(this);">Es-moll</button>
+				</div>
+			</div>
+			
+			<div class="scaleBox">
+				<img class="scaleImg" src="Images/Scales/Cbmajor.png" onClick="return false" onContextMenu="return false" onSelectStart="return false" onSelect="return false" onCopy="return false" onDragstart="return false" onDrag="return false">
+				<div class="buttonsBox">
+					<button id="CBmajor" class="button" onclick="getScale(this);">Ces-dur</button>
+					<button id="ABminor" class="button" onclick="getScale(this);">As-moll</button>
+				</div>
+			</div>
+		</div>
+		
 	</body>
 </html>
